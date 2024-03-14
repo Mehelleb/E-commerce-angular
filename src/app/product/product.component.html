@@ -1,0 +1,8 @@
+<h2>Données du produit: <span>{{product.id}}</span></h2>
+<p>ID: {{product.id}}</p>
+<p>Title: {{product.title}}</p>
+<p>Quantity: {{product.quantity}}</p>
+<p>Price: {{product.price}}</p>
+<p>Like: {{product.like}}</p>
+<!--ici je déclare un bouton et lorsque j'appuie, j'exécute la méthode sendNotif(product)-->
+<button (click)="sendNotif(product)" class="btn btn-success">like</button>

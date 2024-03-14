@@ -1,0 +1,8 @@
+<h3>Je suis le composant parent mais mon père est au dessus...</h3>
+<app-product
+ *ngFor="let p of listProducts"[product]="p"
+  (clickedProduct)="incrementLike($event)">
+  <!--la propriété (clickedProduct) sera enfin liée à l'éxécution de la méthode incrementLike($event)
+qui se trouve dans le composant list-product.component-->
+</app-product>
+
